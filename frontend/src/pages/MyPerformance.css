@@ -1,0 +1,177 @@
+
+.myperf-page {
+  min-height: 100vh;
+  padding: 36px;
+  background: #f5f7fb;
+  color: #17233b;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.myperf-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.myperf-header h1 {
+  font-size: 30px;
+  margin: 5px 0 8px;
+}
+
+.myperf-header p {
+  color: #718096;
+}
+
+.myperf-eyebrow {
+  color: #6366f1 !important;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.myperf-header input {
+  padding: 12px;
+  border: 1px solid #dce2ec;
+  border-radius: 10px;
+  background: white;
+}
+
+.myperf-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.myperf-stats article,
+.myperf-panel {
+  background: white;
+  border: 1px solid #e8ecf4;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(24, 39, 75, .04);
+}
+
+.myperf-stats span {
+  display: block;
+  color: #718096;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.myperf-stats strong {
+  display: block;
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+
+.myperf-stats small {
+  color: #718096;
+}
+
+.myperf-panel {
+  margin-bottom: 24px;
+}
+
+.myperf-panel h2 {
+  margin: 0 0 20px;
+  font-size: 21px;
+}
+
+.myperf-attendance {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.myperf-attendance div {
+  background: #f8faff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.myperf-attendance strong {
+  display: block;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.myperf-attendance span {
+  font-size: 13px;
+  color: #718096;
+}
+
+.myperf-note {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #718096;
+}
+
+.myperf-reviews {
+  display: grid;
+  gap: 16px;
+}
+
+.myperf-review {
+  padding: 20px;
+  border: 1px solid #e8ecf4;
+  border-radius: 12px;
+}
+
+.myperf-review-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myperf-review-head h3 {
+  margin: 0 0 7px;
+}
+
+.myperf-review-head span {
+  color: #718096;
+  font-size: 13px;
+}
+
+.myperf-review-head strong {
+  font-size: 28px;
+  color: #4f46e5;
+}
+
+.myperf-feedback {
+  margin-top: 18px;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.myperf-error {
+  padding: 14px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .myperf-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .myperf-page {
+    padding: 18px;
+  }
+
+  .myperf-stats,
+  .myperf-attendance {
+    grid-template-columns: 1fr;
+  }
+
+  .myperf-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

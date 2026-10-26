@@ -1,0 +1,76 @@
+.my-tasks-panel {
+  background: #ffffff;
+  border: 1px solid #e5eaf3;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 24px 0;
+  width: 100%;
+}
+
+.my-tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.my-tasks-header h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  color: #14213d;
+}
+
+.my-tasks-header p {
+  margin: 0;
+  color: #7c8ba5;
+}
+
+.my-tasks-header button,
+.my-tasks-table button {
+  padding: 9px 14px;
+  border: 1px solid #dce3ef;
+  border-radius: 9px;
+  background: #f8f9ff;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.my-tasks-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.my-tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.my-tasks-table th,
+.my-tasks-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.my-tasks-table th {
+  background: #f7f8fc;
+  color: #61718f;
+}
+
+.my-tasks-table td small {
+  display: block;
+  margin-top: 5px;
+  color: #8491a7;
+}
+
+@media (max-width: 768px) {
+  .my-tasks-panel {
+    padding: 16px;
+  }
+
+  .my-tasks-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
